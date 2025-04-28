@@ -1,12 +1,15 @@
 if SHIELD_ANYWHY_FLAKE_LEFT
 
 config ZMK_KEYBOARD_NAME
+    string "Keyboard name"
     default "Anywhy Flake"
 
 config ZMK_SPLIT_ROLE_CENTRAL
+    bool "Set this half as central"
     default y
 
 config ZMK_STUDIO
+    bool "Enable ZMK Studio"
     default y
 
 endif
@@ -14,6 +17,7 @@ endif
 if SHIELD_ANYWHY_FLAKE_LEFT || SHIELD_ANYWHY_FLAKE_RIGHT
 
 config ZMK_SPLIT
+    bool "Enable split keyboard support"
     default y
 
 endif
